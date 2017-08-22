@@ -1,1 +1,1 @@
-web: bundle exec ruby app.rb #-p $PORT
+web: bundle exec ruby pizza_app.rb #-p $PORT
