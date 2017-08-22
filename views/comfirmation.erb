@@ -1,0 +1,10 @@
+<%count=0%>
+<%topping.each do|top|%>
+<form method = "post" action = "/checkout">
+<%=top%>
+<p><input  type="radio"  value="<%=top%>" name = "final_topping +<%=count.to_s%>" checked="checked">yes</p>
+<p><input type= "radio" value="" name = "final_topping +<%=count.to_s%>">no</p>
+<%count+=1%>
+<%end%>
+<input type = "submit">
+</form>
