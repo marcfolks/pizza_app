@@ -1,4 +1,9 @@
-#food img {
-    height: 20px;
+#food-image {
     width: 20px;
+    height: 20px;
+}
+
+.food-image {
+    inline-size: 30px, 30px height: 30px;
+    width: 30px;
 }

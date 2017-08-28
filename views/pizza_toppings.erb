@@ -1,34 +1,44 @@
-<h1>please select toppings:</h1>
+
+
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+ Select topping
 <center>
 <form method = "post" action = "/comfirmation">
 <div id= "food">
-<h3> Select meats:</h3>
- <p><input type ="checkbox" value="pepperoni" name ="topping[]"><img src="img/pepperoni.jpg"></p>
- <p><input type = "checkbox" value="sausage" name = "topping[]">sausage</p>
- <p><input type = "checkbox" value="bacon" name="topping[]">bacon</p>
- <p><input type = "checkbox" value="ham" name="topping[]">ham</p>
- <p><input type = "checkbox" value="steak" name="topping[]">steak</p>
 
- <h3>Select cheeses:</h3>
- <p><input type = "checkbox" value="mozzarella" name="topping[]">mozzarella</p>
- <p><input type = "checkbox" value="cheddar" name="topping[]">cheddar</p>
- <p><input type = "checkbox" value="provolone" name="topping[]">provolone</p>
- <p><input type = "checkbox" value="parmesan" name="topping[]">parmesan</p>
- <p><input type = "checkbox" value="pepperjack" name="topping[]">pepperjack</p>
+<b> Select meats:</b>
+ <p><input type ="checkbox" value="pepperoni" name ="meat[]"<img><img src="img/pepperoni.jpg"img class=food-image><img></p>
+ <p><input type = "checkbox" value="sausage" name = "meat[]"><img src="img/sausage.jpg" img class=food-image></p>
+ <p><input type = "checkbox" value="bacon" name="meat[]"><img src="img/bacon.jpg" img class=food-image></p>
+ <p><input type = "checkbox" value="ham" name="meat[]">ham</p>
+ <p><input type = "checkbox" value="steak" name="meat[]">steak</p>
+ <food-image= width=30px hieght=30px>
 
- <h3>Select sauce:</h3>
- <p><input type = "checkbox" value="robust_tomatoe" name="topping[]">robust_tomatoe</p>
- <p><input type = "checkbox" value="marinara" name="topping[]">marinara</p>
- <p><input type = "checkbox" value="alfredo" name="topping[]">alfredo</p>
+ <b>Select cheeses:</b>
+ <p><input type = "checkbox" value="mozzarella" name="cheese[]">mozzarella</p>
+ <p><input type = "checkbox" value="cheddar" name="cheese[]">cheddar</p>
+ <p><input type = "checkbox" value="provolone" name="cheese[]">provolone</p>
+ <p><input type = "checkbox" value="parmesan" name="cheese[]">parmesan</p>
+ <p><input type = "checkbox" value="pepperjack" name="cheese[]">pepperjack</p>
+ `  `
 
- <h3>Select crust:</h3>
- <p><input type = "checkbox" value="stuffed" name="topping[]">stuffed</p>
- <p><input type = "checkbox" value="parmesan" name="topping[]">parmesan</p>
- <p><input type = "checkbox" value="spice" name="topping[]">spice</p>
+ <b>Select sauce:</b>
+ <p><input type = "checkbox" value="robust_tomatoe" name="sauce[]">robust_tomatoe</p>
+ <p><input type = "checkbox" value="marinara" name="sauce[]">marinara</p>
+ <p><input type = "checkbox" value="alfredo" name="sauce[]">alfredo</p>
+
+ <b>Select crust:</b>
+ <p><input type = "checkbox" value="stuffed" name="crust[]">stuffed</p>
+ <p><input type = "checkbox" value="parmesan" name="crust[]">parmesan</p>
+ <p><input type = "checkbox" value="spice" name="crust[]">spice</p>
 </div>
  </center>
 
- </center><input type='submit'></center>
+ <center><input type='submit'></center>
  </form>
 
 

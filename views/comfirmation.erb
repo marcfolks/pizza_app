@@ -1,10 +1,44 @@
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
 <%count=0%>
-<%topping.each do|top|%>
-<form method = "post" action = "/checkout">
+<%meat.each do|top|%>
+<form method = "post" action = "/checkout"><img class=food-image>
 <%=top%>
-<p><input  type="radio"  value="<%=top%>" name = "final_topping +<%=count.to_s%>" checked="checked">yes</p>
-<p><input type= "radio" value="" name = "final_topping +<%=count.to_s%>">no</p>
+<p><input  type="radio"  value="<%=top%>" name = "final_meat +<%=count.to_s%>" checked="checked">yes</p>
+<p><input type= "radio" value="" name = "final_meat +<%=count.to_s%>">no</p>
 <%count+=1%>
 <%end%>
+</form>
+
+<%count=0%>
+<%cheese.each do|top|%>
+<form method = "post" action = "/checkout">
+<%=top%>
+<p><input  type="radio"  value="<%=top%>" name = "final_cheese +<%=count.to_s%>" checked="checked">yes</p>
+<p><input type= "radio" value="" name = "final_cheese +<%=count.to_s%>">no</p>
+<%count+=1%>
+<%end%>
+</form>
+
+<%count=0%>
+<%sauce.each do|top|%>
+<form method = "post" action = "/checkout">
+<%=top%>
+<p><input  type="radio"  value="<%=top%>" name = "final_sauce +<%=count.to_s%>" checked="checked">yes</p>
+<p><input type= "radio" value="" name = "final_sauce +<%=count.to_s%>">no</p>
+<%count+=1%>
+<%end%>
+</form>
+
+<%count=0%>
+<%crust.each do|top|%>
+<form method = "post" action = "/checkout">
+<%=top%>
+<p><input  type="radio"  value="<%=top%>" name = "final_crust +<%=count.to_s%>" checked="checked">yes</p>
+<p><input type= "radio" value="" name = "final_crust +<%=count.to_s%>">no</p>
+<%count+=1%>
+<%end%>
+
+
 <input type = "submit">
 </form>
